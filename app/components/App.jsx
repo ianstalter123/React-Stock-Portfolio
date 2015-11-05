@@ -77,7 +77,11 @@ export default class App extends React.Component {
     return (
       <div>
         <h1>React Stock Portfolio</h1>
-        <StockInputSelect name="stockOptionlist" options={this.getStockDropDown()}/>
+        <StockInputSelect
+          name="stockOptionlist"
+          options={this.getStockDropDown()}
+          placeholder="Enter the name of a company or stock ticker"
+        />
         <StockDetailsForm addStockFunc={this.addStockToPortfolio.bind(this)}/>
         <StockList>
           {this.createStockDetailsList()}

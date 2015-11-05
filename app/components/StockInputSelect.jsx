@@ -7,7 +7,7 @@ export default class StockInputSelect extends React.Component {
     return (
       <div>
         <Select
-          placeholder="Enter the name of a company or stock ticker"
+          placeholder={this.props.placeholder}
           matchPos="any"
           matchProp="label"
           multi={false}
