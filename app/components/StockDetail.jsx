@@ -10,8 +10,8 @@ export default class StockDetail extends React.Component {
   }
 
   render() {
-    var originalAmount = this.calculateTotalAmount();
-    var realTimePrice = this.calculateCurrentPrice(this.props.ticker);
+    var originalAmount = this.calculateTotalAmount(),
+        realTimePrice = this.calculateCurrentPrice(this.props.ticker);
 
     return (
       <tr>

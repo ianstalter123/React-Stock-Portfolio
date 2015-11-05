@@ -2,14 +2,12 @@ import React from 'react';
 
 export default class StockDetailsForm extends React.Component {
   handleAdd(){
-
     var stockDetails = {
-      name: this.refs.name.value,
-      ticker: this.refs.ticker.value,
-      numShares: this.refs.numShares.value,
-      purchasePrice: this.refs.purchasePrice.value
-    };
-
+          name: this.refs.name.value,
+          ticker: this.refs.ticker.value,
+          numShares: this.refs.numShares.value,
+          purchasePrice: this.refs.purchasePrice.value
+        };
     this.props.addStockFunc(stockDetails);
   }
 

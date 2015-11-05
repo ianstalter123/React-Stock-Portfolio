@@ -5,9 +5,11 @@ body {
 table, tr, td , th {
   border: 1px solid black;
 }
+
 /*
   Had issue loading css for react-select so cp into main.css as short term fix
 */
+
 .Select {
   position: relative;
 }

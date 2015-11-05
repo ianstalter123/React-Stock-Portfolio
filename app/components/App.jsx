@@ -7,7 +7,6 @@ import StockFooter from './StockFooter.jsx';
 import portfolio from '../data/stockPortfolio.js';
 import stockRealTimeDatabase from '../data/stockDatabase.js';
 
-
 export default class App extends React.Component {
   constructor(props) {
     super(props);
