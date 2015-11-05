@@ -80,7 +80,7 @@ export default class App extends React.Component {
           options={this.getStockDropDown()}
           placeholder="Enter the name of a company or stock ticker"
         />
-        <StockDetailsForm addStockFunc={this.addStockToPortfolio.bind(this)}/>
+        <StockDetailsForm className="details" addStockFunc={this.addStockToPortfolio.bind(this)}/>
         <StockList>
           {this.createStockDetailsList()}
           <StockFooter currentTotal={this.calculateCurrentTotal()} gainTotal={this.calculateTotalGain()}/>

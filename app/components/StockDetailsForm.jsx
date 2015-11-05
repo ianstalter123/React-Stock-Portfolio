@@ -14,7 +14,7 @@ export default class StockDetailsForm extends React.Component {
   render() {
     return (
       <div>
-        <table>
+        <table className="details">
           <thead>
             <tr>
               <th>Name</th>
@@ -35,6 +35,7 @@ export default class StockDetailsForm extends React.Component {
           </tbody>
         </table>
       </div>
+
     );
   }
 }
