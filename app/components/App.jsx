@@ -37,23 +37,21 @@ export default class App extends React.Component {
   }
 
   calculateTotalGain() {
-    var portfolio = this.state.portfolio,
-        totalGain = portfolio.reduce((accumulator, next) => {
-          var currentPrice = this.getCurrentStockPrice(next.ticker);
-          return accumulator + (currentPrice - next.purchasePrice) * next.numShares;
-        }, 0);
+    var portfolio = this.state.portfolio;
 
-    return totalGain.toFixed(2);
+    return portfolio.reduce((accumulator, next) => {
+      var currentPrice = this.getCurrentStockPrice(next.ticker);
+      return accumulator + (currentPrice - next.purchasePrice) * next.numShares;
+    }, 0);
   }
 
   calculateCurrentTotal(){
-    var portfolio = this.state.portfolio,
-        totalCurrentValue = portfolio.reduce((accumulator, next) => {
+    var portfolio = this.state.portfolio;
+
+    return portfolio.reduce((accumulator, next) => {
           var currentPrice = this.getCurrentStockPrice(next.ticker);
           return accumulator + (next.numShares * currentPrice);
         }, 0);
-
-    return totalCurrentValue.toFixed(2);
   }
 
   addStockToPortfolio(stockObject) {
