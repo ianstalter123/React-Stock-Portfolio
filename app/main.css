@@ -1,7 +1,20 @@
-body {
-  background: lightblue;
+html, body {
+    height: 100%;
 }
 
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    background:lightblue;
+    text-align:center;
+}
+.test{
+  
+}
 table, tr, td , th {
   border: 1px solid black;
 }
