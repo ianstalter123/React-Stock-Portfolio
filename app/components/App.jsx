@@ -76,7 +76,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
-        <h1>{this.calculateTotalGain()}</h1>
+        <h1>React Stock Portfolio</h1>
         <StockInputSelect name="stockOptionlist" options={this.getStockDropDown()}/>
         <StockDetailsForm addStockFunc={this.addStockToPortfolio.bind(this)}/>
         <StockList>
