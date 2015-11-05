@@ -1,5 +1,4 @@
 import React from 'react';
-import currencyFormatter from '../utils/currencyFormatter.js';
 
 export default class StockDetail extends React.Component {
   calculateTotalAmount() {
@@ -19,10 +18,10 @@ export default class StockDetail extends React.Component {
         <td>{this.props.name}</td>
         <td>{this.props.ticker}</td>
         <td>{this.props.numShares}</td>
-        <td>{currencyFormatter.format(this.props.purchasePrice)}</td>
-        <td>{currencyFormatter.format(originalAmount)}</td>
-        <td>{currencyFormatter.format(realTimePrice)}</td>
-        <td>{currencyFormatter.format(realTimePrice - originalAmount)}</td>
+        <td>{this.props.purchasePrice}</td>
+        <td>{originalAmount}</td>
+        <td>{realTimePrice}</td>
+        <td>{realTimePrice - originalAmount}</td>
       </tr>
     )
   }
